@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym - Your Path to Fitness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary-color: #ff4d4d;
+            --secondary-color: #333;
+            --light-color: #f4f4f4;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--secondary-color);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff3333;
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+        }
+
+        /* Services */
+        .services {
+            background: var(--light-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Trainers */
+        .trainers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .trainer-card {
+            text-align: center;
+        }
+
+        .trainer-card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        /* Pricing */
+        .pricing {
+            background: var(--light-color);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .price-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .price-card h3 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact */
+        .contact-info {
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Transform Your Body, Transform Your Life</h1>
+            <p>Join FitLife Gym today and start your fitness journey with expert guidance</p>
+            <a href="#pricing" class="btn">Join Now</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <p>At FitLife Gym, we're more than just a gym - we're a community dedicated to helping you achieve your fitness goals. With state-of-the-art equipment, expert trainers, and a supportive environment, we provide everything you need to succeed in your fitness journey.</p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Personal Training</h3>
+                    <p>One-on-one training sessions tailored to your specific goals and needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Group Classes</h3>
+                    <p>High-energy group workouts including HIIT, yoga, spinning, and more.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Nutrition Planning</h3>
+                    <p>Custom nutrition plans to complement your workout routine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trainers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Trainers</h2>
+            </div>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Trainer 1">
+                    <h3>John Doe</h3>
+                    <p>Strength Training Specialist</p>
+                </div>
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1544972917-3529b113a469?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Trainer 2">
+                    <h3>Jane Smith</h3>
+                    <p>Yoga & Pilates Expert</p>
+                </div>
+                <div class="trainer-card">
+                    <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Trainer 3">
+                    <h3>Mike Johnson</h3>
+                    <p>CrossFit Coach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Membership Plans</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Basic</h3>
+                    <h4>$29/month</h4>
+                    <ul>
+                        <li>Access to gym floor</li>
+                        <li>Basic equipment usage</li>
+                        <li>Locker room access</li>
+                    </ul>
+                    <a href="#contact" class="btn">Choose Plan</a>
+                </div>
+                <div class="price-card">
+                    <h3>Premium</h3>
+                    <h4>$49/month</h4>
+                    <ul>
+                        <li>Full gym access</li>
+                        <li>Group classes included</li>
+                        <li>Fitness assessment</li>
+                    </ul>
+                    <a href="#contact" class="btn">Choose Plan</a>
+                </div>
+                <div class="price-card">
+                    <h3>Elite</h3>
+                    <h4>$99/month</h4>
+                    <ul>
+                        <li>All Premium features</li>
+                        <li>Personal training sessions</li>
+                        <li>Nutrition consultation</li>
+                    </ul>
+                    <a href="#contact" class="btn">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-info">
+                <p>📍 123 Fitness Street, Gym City, GC 12345</p>
+                <p>📞 (555) 123-4567</p>
+                <p>✉️ info@fitlifegym.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FitLife Gym. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navigation background change on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = '#222';
+            } else {
+                nav.style.background = '#333';
+            }
+        });
+    </script>
+</body>
+</html> 
